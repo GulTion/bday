@@ -38,6 +38,7 @@ body {
 	overflow: hidden;
 }</style>
 <script>
+		document.title = atob(location.search.match(/text=(.+)/)[1])
 
     var w = c.width = window.innerWidth,
 		h = c.height = window.innerHeight,
@@ -49,7 +50,7 @@ body {
 		opts = {
 			strings: atob(location.search.match(/text=(.+)/)[1]).split("\n"),
 			charSize: 35,
-			charSpacing: 35,
+			charSpacing: 23,
 			lineHeight: 40,
 			
 			cx: w / 2,
